@@ -8,7 +8,8 @@
             <span class="ios-only">Back</span>
           </a>
         </div>
-        <div class="title">{{productb.title}} {{productb.fname}}</div>
+        <div id="ccompleteName" class="title"></div>
+        <!--<div class="title">{{productb.title}} {{productb.fname}}</div>-->
       </div>
     </div>
 
@@ -24,6 +25,7 @@
   </div>
 </template>
 <script>
+   alert("Hi");
   return {
     data: function () {
       var productbId = this.$route.params.id;
@@ -36,6 +38,7 @@
       return {
         productb: currentProductb,
       };
+      alert(productbId+''+productb.id);
     }
   };
 </script>

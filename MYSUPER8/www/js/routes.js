@@ -16,7 +16,6 @@ routes = [
     path: '/product/:id/',
     componentUrl: './pages/product.html',
   },
-  ,
   {
     path: '/catalogb/',
     componentUrl: './pages/catalogb.html',
@@ -39,6 +38,12 @@ routes = [
     path: '/page-loader-component/:user/:userId/:posts/:postId/',
     componentUrl: './pages/page-loader-component.html',
   },
+
+  {
+    path: '/customerinfo/',
+    url: './pages/customerinfo.html',
+  },
+
   {
     path: '/request-and-load/user/:userId/',
     async: function (routeTo, routeFrom, resolve, reject) {
