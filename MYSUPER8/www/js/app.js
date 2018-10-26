@@ -127,12 +127,17 @@ $$('#my-login-screen .login-button').on('click', function () {
 });
 
 
-
-$(document).on('pageInit', '.page[data-page="catalogb"]', function (e) {
+$$('.btn-test').on('click', function () {
+    
+    // Alert username and password
+    app.dialog.alert('hey');
+  });
+/*
+$$(document).on('pageInit', '.page[data-page="catalogb"]', function (e) {
   // Following code will be executed for page with data-page attribute equal to "about"
  alert('Customers page');
 })
-
+*/
 
 
 

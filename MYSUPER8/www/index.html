@@ -160,9 +160,10 @@
           <div class="block-title">Modals</div>
           <div class="block block-strong">
             <div class="row">
-              <div class="col-50">
-                <a href="#" class="button button-raised button-fill popup-open" data-popup="#my-popup">Popup</a>
-              </div>
+                <div class="col-50">
+                    <a href="#" class="button button-raised button-fill popup-open" data-popup="#my-popup">Popup</a>
+                  </div>
+              
               <div class="col-50">
                 <a href="#" class="button button-raised button-fill login-screen-open" data-login-screen="#my-login-screen">Login Screen</a>
               </div>
@@ -220,24 +221,162 @@
 			</div>
 
     <!-- Popup -->
-    <div class="popup" id="my-popup">
-      <div class="view">
-        <div class="page">
-          <div class="navbar">
-            <div class="navbar-inner">
-              <div class="title">Popup</div>
-              <div class="right">
-                <a href="#" class="link popup-close">Close</a>
-              </div>
+     <!-- Popup -->
+     <div class="popup" id="my-popup">
+        <div class="view">
+            <div class="page">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                           
+                        <div class="title"></div>
+                        <div class="right">
+                            <a href="#" class="link popup-close">Close</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-content">
+
+
+                    <div class="block-title"></div>
+                    <div class="list no-hairlines-md">
+                        <ul>
+                            <li>
+                                <input type="hidden" id="txt-id" name="fname" />
+                                <div class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title item-label">First Name</div>
+                                        <div class="item-input-wrap">
+                                            <input type="text" id="fname" name="fname" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title item-label">Last Name</div>
+                                        <div class="item-input-wrap">
+                                            <input type="text" id="lname" name="lname" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title item-label">Phone</div>
+                                        <div class="item-input-wrap">
+                                            <input type="number" id="phone" name="phone" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title item-label">Birth date</div>
+                                        <div class="item-input-wrap">
+                                            <input type="date" id="birthdate" name="birthdate" placeholder="Birth day"
+                                                value="2014-04-30" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title item-label">Email</div>
+                                        <div class="item-input-wrap">
+                                            <input type="email" id="email" name="email" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title item-label">Street Name</div>
+                                        <div class="item-input-wrap">
+                                            <input type="text" id="add_street" name="add_street" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title item-label">Unit, Building, Floor No.</div>
+                                        <div class="item-input-wrap">
+                                            <input type="text" id="add_unit" name="add_unit" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title item-label">City</div>
+                                        <div class="item-input-wrap">
+                                            <select id="add_city" name="add_city">
+                                                <option>Manila</option>
+                                                <option>Quezon City</option>
+                                                <option>Makati</option>
+                                                <option>Pasig</option>
+                                                <option>Mandaluyong</option>
+                                                <option>Pasay</option>
+                                                <option>Taguig</option>
+                                                <option>Las Piñas</option>
+
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title item-label">Area</div>
+                                        <div class="item-input-wrap">
+                                            <input type="text" id="add_area" name="add_area" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title item-label">Zip Code</div>
+                                        <div class="item-input-wrap">
+                                            <input type="text" id="add_zip" name="add_zip" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title item-label">Landmark</div>
+                                        <div class="item-input-wrap">
+                                            <input type="text" id="add_landmark" name="add_landmark" />
+                                            <input type="hidden" id="timestamp" name="timestamp" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="block">
+                        <a href="#" id="submit" class="button form-to-data button button-raised button-fill popup-close">Submit</a>
+                    </div>
+                    <br>
+                </div>
             </div>
-          </div>
-          <div class="page-content">
-            <div class="block">
-              <p>Popup content goes here.</p>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
 
     <!-- Login Screen -->
