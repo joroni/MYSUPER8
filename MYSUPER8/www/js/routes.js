@@ -7,20 +7,25 @@ routes = [
     path: '/about/',
     url: './pages/about.html',
   },
-  {
-    path: '/catalog/',
-    componentUrl: './pages/catalog.html',
-  },
   
-  {
-    path: '/product/:id/',
-    componentUrl: './pages/product.html',
-  },
+  
+  
   {
     path: '/catalogb/',
     componentUrl: './pages/catalogb.html',
   },
-  
+  {
+    path: '/category/',
+    componentUrl: './pages/category.html',
+  },
+  {
+    path: '/catalog/:cat/',
+    componentUrl: './pages/catalog.html',
+  },
+  {
+    path: '/product/:id/',
+    componentUrl: './pages/product.html',
+  },
   {
     path: '/productb/:id/',
     componentUrl: './pages/productb.html',

@@ -9,6 +9,11 @@
   <meta name="theme-color" content="#2196f3">
   <meta name="format-detection" content="telephone=no">
   <meta name="msapplication-tap-highlight" content="no">
+ 
+
+  <!-- Your custom styles (optional) -->
+  
+
 
   <link rel="stylesheet" href="framework7/css/framework7.min.css">
   <link rel="stylesheet" href="css/icons.css">
@@ -17,7 +22,7 @@
 	<link rel="stylesheet" href="components/loader.css">
 	<link rel="stylesheet" href="css/style.css">
    
-  <script src="js/jquery-3.3.1.min.js"></script>
+  
 </head>
 <body>
   <div id="app">
@@ -71,7 +76,7 @@
               <i class="icon material-icons md-only">person</i>
               <span class="tabbar-label">Customers</span>
             </a>
-            <a href="/catalog/" id="btnStore"  class="tab-link">
+            <a href="/category/" id="btnStore"  class="tab-link">
               <i class="icon f7-icons ios-only">list</i>
               <i class="icon f7-icons ios-only icon-ios-fill">list_fill</i>
               <i class="icon material-icons md-only">view_list</i>
@@ -220,9 +225,46 @@
 				<!-- Customers page will be loaded here dynamically from /customers/ route -->
 			</div>
 
-    <!-- Popup -->
+      
+			<!-- Settings View -->
+			<div id="view-category" class="view tab">
+          <!-- Customers page will be loaded here dynamically from /customers/ route -->
+        </div>
+  
+   
+     <!-- Popup Products -->
+     <div class="popup" id="my-popup-products">
+        <div class="view">
+            <div class="page">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="left">
+                            <a href="#" class="link popup-close">Back</a>
+                        </div>
+                        <div class="title"></div>
+                        
+                    </div>
+                </div>
+                <div class="page-content">
+
+                  
+                    <div class="list no-hairlines-md">
+                        <div id="productosWrapper" class="row wow fadeIn list no-hairlines-md"> </div>
+                    </div>
+                 
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
      <!-- Popup -->
      <div class="popup" id="my-popup">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/cart.css">
+        <link href="css/mdb.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/store.css">
         <div class="view">
             <div class="page">
                 <div class="navbar">
@@ -427,6 +469,19 @@
   <script src="js/routes.js"></script>
   <!-- Your custom app scripts -->
   <script src="js/app.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  
+  <script src='js/lodash.min.js'></script>
+  <script src='js/spin.min.js'></script>
+  <script src='js/ladda.min.js'></script>
 
+<script>
+
+$('#categories a.category').on('click', function () {
+    var selectedCat = $$(this).html();
+    // Alert username and password
+    app.dialog.alert(selectedCat);
+  });
+</script>
 </body>
 </html>
